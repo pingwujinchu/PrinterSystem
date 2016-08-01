@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+		"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+		"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+<!-- 若package加上namespace属性，则jsp页面form 的action属性必需加上项目名称的路径-->
+	<constant name="struts.devMode" value="true" />
+
+	<package name="printsystem" extends="struts-default" namespace="/">
+
+        <action name="login" class="com.xjtu.print.LoginAction" >
+          <result type = "stream"></result>
+        </action>
+        
+        <action name="show" class="com.xjtu.print.ShowAction">
+           <result type="stream"> </result>
+        </action>
+                
+        <action name="test" class="com.xjtu.print.TestAction">
+           <result name="success">/index.html </result>
+        </action>
+        
+         <action name="print" class="com.xjtu.print.PrintAction">
+           <result type="stream"> </result>
+        </action>
+        <action name = "exit" class = "com.xjtu.print.ExitAction">
+           <result name="success">/index.html</result>         
+        </action>
+           <action name = "save" class = "com.xjtu.print.SaveAction">
+                      <result type="stream"> </result>       
+        </action>
+        <action name = "state" class = "com.xjtu.print.StateAction">
+                      <result type="stream"> </result>       
+        </action>
+        
+         <action name = "delete" class = "com.xjtu.print.DeleteAction">
+                <result type="stream"> </result>       
+        </action>
+	</package>
+
+</struts>

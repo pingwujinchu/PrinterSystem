@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" xid="window" design="device:pc;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __justepbasexid__="__baseID__" __cid="cyYzMVv" class="cyYzMVv" components="$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/data,">
+  <style>#view.cyYzMVv{background: url(@justepContextPath@/Print/images/login_bg_0.jpg) rgb(248, 246, 233)} .signin.cyYzMVv{width: 477px; height: 479px; background: url(@justepContextPath@/Print/images/login_bg.png) no-repeat; margin: 0 auto; position: absolute; top: 50%; left: 50%; margin-top: -239px; margin-left: -238px} .signin-head.cyYzMVv{margin: 0 auto; padding-top: 30px; width: 120px} .form-signin.cyYzMVv{max-width: 330px; padding: 43px 15px 15px 15px; margin: 0 auto} .form-signin.cyYzMVv .checkbox.cyYzMVv{margin-bottom: 10px} .form-signin.cyYzMVv .checkbox.cyYzMVv{font-weight: normal} .form-signin.cyYzMVv .form-control.cyYzMVv{position: relative; font-size: 16px; height: auto; padding: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box} .form-signin.cyYzMVv .form-control.cyYzMVv:focus{z-index: 2} .form-signin.cyYzMVv input[type="text"].cyYzMVv{margin-bottom: 14px; border-radius: 0; background: url(@justepContextPath@/Print/images/login_user.png) 0 0 rgb(189, 189, 189) no-repeat; padding-left: 60px; color: rgb(255, 255, 255)} .form-signin.cyYzMVv input[type="password"].cyYzMVv{margin-bottom: 10px; border-radius: 0; background: url(@justepContextPath@/Print/images/login_pas.png) 0 0 rgb(189, 189, 189) no-repeat; padding-left: 60px; color: rgb(255, 255, 255)} .form-signin.cyYzMVv button.cyYzMVv{border-radius: 0}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cyYzMVv" class="cyYzMVv"></div>  
+  <div xid="view" id="view" __cid="cyYzMVv" class="cyYzMVv"> 
+    <div class="signin cyYzMVv" __cid="cyYzMVv"> 
+      <div class="signin-head cyYzMVv" __cid="cyYzMVv">
+        <img src="@justepContextPath@/Print/images/test/head.jpg" alt="" class="img-circle cyYzMVv" __cid="cyYzMVv">
+      </div>  
+      <div class="form-signin cyYzMVv" role="form" __cid="cyYzMVv"> 
+        <input type="text" class="form-control cyYzMVv" name="userName" id="userName" placeholder="用户名" xid="userName" required="true" autofocus="true" __cid="cyYzMVv">  
+        <input type="password" class="form-control cyYzMVv" name="password" id="password" placeholder="密码" xid="password" required="true" __cid="cyYzMVv">  
+        <button class="btn btn-lg btn-warning btn-block cyYzMVv" type="submit" xid="loginBut" __cid="cyYzMVv" data-bind="event:{click:$model._callModelFn.bind($model, 'loginButClick')}">登录</button> 
+      </div> 
+    </div>
+  </div> 
+</div>

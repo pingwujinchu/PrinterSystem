@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cq26rQb" component="$model/UI2/system/components/justep/window/window" design="device:pc;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __justepbasexid__="__baseID__" __cid="cq26rQb" components="$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/output/output,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cq26rQb" class="cq26rQb"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pbf7a817cdeb54a248d5de65971cdc969-iosstatusbar cq26rQb" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cq26rQb"> 
+    <div class="x-panel-content cq26rQb" xid="content1" style="vertical-align:middle;text-align:center;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cq26rQb"> 
+      <div xid="div1" align="center" __cid="cq26rQb" class="cq26rQb"> 
+        <ul component="$model/UI2/system/components/justep/list/list" class="x-list x-list-template center-block hide cq26rQb" xid="list1" style="vertical-align:middle;text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" data-config="{&#34;data&#34;:&#34;termData&#34;}" __cid="cq26rQb"> 
+          <li xid="li1" class="center-block cq26rQb" style="vertical-align:middle;text-align:center;" __cid="cq26rQb">
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row center-block cq26rQb" xid="row1" style="vertical-align:middle;text-align:center;width:87%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cq26rQb"> 
+              <div class="x-col x-col-10 cq26rQb" xid="col1" __cid="cq26rQb">
+                <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cq26rQb" xid="checkbox2" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{ref:ref('calButton'),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cq26rQb">
+                  <input type="checkbox" __cid="cq26rQb" class="cq26rQb">
+                  <label __cid="cq26rQb" class="cq26rQb"></label>
+                </span>
+              </div>  
+              <div class="x-col cq26rQb" xid="col2" __cid="cq26rQb">
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output cq26rQb" xid="output2" data-bind="component:{ref:ref('term'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cq26rQb"></div>
+              </div> 
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>  
+    <div class="x-panel-bottom cq26rQb" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cq26rQb">
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label x-dialog-button cq26rQb" xid="cancelBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;wReceiver.windowCancel&#34;}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cq26rQb"> 
+        <i xid="i2" __cid="cq26rQb" class="cq26rQb"></i>  
+        <span xid="span2" __cid="cq26rQb" class="cq26rQb">取消</span>
+      </a>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary x-dialog-button cq26rQb" xid="OKBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:OKBtnClick" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="cq26rQb"> 
+        <i xid="i1" __cid="cq26rQb" class="cq26rQb"></i>  
+        <span xid="span1" __cid="cq26rQb" class="cq26rQb">确定</span>
+      </a>
+    </div>
+    <style __cid="cq26rQb" class="cq26rQb">.x-panel.pbf7a817cdeb54a248d5de65971cdc969-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pbf7a817cdeb54a248d5de65971cdc969-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pbf7a817cdeb54a248d5de65971cdc969-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pbf7a817cdeb54a248d5de65971cdc969-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pbf7a817cdeb54a248d5de65971cdc969-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pbf7a817cdeb54a248d5de65971cdc969-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pbf7a817cdeb54a248d5de65971cdc969-iosstatusbar >.x-panel-content {top: 0px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" style="left:443px;top:568px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="cq26rQb" class="cq26rQb"></span>
+</div>

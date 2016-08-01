@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cmyQbua" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __justepbasexid__="__baseID__" __cid="cmyQbua" components="$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/output/output,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cmyQbua" class="cmyQbua"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p80ac664236244c88bb9ad656e6af0e5c-iosstatusbar cmyQbua" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cmyQbua"> 
+    <div class="x-panel-content cmyQbua" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmyQbua">
+      <div xid="div1" align="center" __cid="cmyQbua" class="cmyQbua"> 
+        <ul component="$model/UI2/system/components/justep/list/list" class="x-list x-list-template center-block hide cmyQbua" xid="list1" style="vertical-align:middle;text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" data-config="{&#34;data&#34;:&#34;taskData&#34;}" __cid="cmyQbua"> 
+          <li xid="li1" class="center-block cmyQbua" style="vertical-align:middle;text-align:center;" __cid="cmyQbua"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cmyQbua" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cmyQbua"> 
+              <div class="x-col x-col-10 cmyQbua" xid="col4" __cid="cmyQbua">
+                <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cmyQbua" xid="checkbox1" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{ref:ref('calBut'),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cmyQbua">
+                  <input type="checkbox" __cid="cmyQbua" class="cmyQbua">
+                  <label __cid="cmyQbua" class="cmyQbua"></label>
+                </span>
+              </div>  
+              <div class="x-col cmyQbua" xid="col1" __cid="cmyQbua">
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output cmyQbua" xid="output1" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'},text:$object.val(&#34;fileName&#34;)" __cid="cmyQbua"></div>
+              </div>
+              <div class="x-col x-col-20 cmyQbua" xid="col5" __cid="cmyQbua">
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output cmyQbua" xid="output2" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'},text:$object.val(&#34;time&#34;)" __cid="cmyQbua"></div>
+              </div>  
+              <div class="x-col x-col-20 cmyQbua" xid="col7" __cid="cmyQbua">
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output cmyQbua" xid="output3" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'},text:$object.val(&#34;state&#34;)" __cid="cmyQbua"></div>
+              </div>
+              <div class="x-col x-col-10 cmyQbua" xid="col6" __cid="cmyQbua">
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cmyQbua" xid="errorBut" style="color:#FF0000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:$object.val(&#34;state&#34;) ==&#34;打印失败&#34;" data-config="{&#34;icon&#34;:&#34;icon-android-close&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cmyQbua"> 
+                  <i xid="i5" class="icon-android-close cmyQbua" __cid="cmyQbua"></i>  
+                  <span xid="span5" __cid="cmyQbua" class="cmyQbua"></span>
+                </a>
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cmyQbua" xid="okBut" style="color:#00FF00;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:$object.val(&#34;state&#34;) ==&#34;打印成功&#34;" data-config="{&#34;icon&#34;:&#34;glyphicon glyphicon-ok&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cmyQbua"> 
+                  <i xid="i4" class="glyphicon glyphicon-ok cmyQbua" __cid="cmyQbua"></i>  
+                  <span xid="span4" __cid="cmyQbua" class="cmyQbua"></span>
+                </a>
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmyQbua" xid="calBut" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:$object.val(&#34;state&#34;) ==&#34;正在等待&#34;" data-events="onClick:calButClick" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cmyQbua"> 
+                  <i xid="i6" __cid="cmyQbua" class="cmyQbua"></i>  
+                  <span xid="span6" __cid="cmyQbua" class="cmyQbua">取消</span>
+                </a>
+              </div> 
+            </div>
+          </li> 
+        </ul> 
+      </div>
+    </div>  
+    <div class="x-panel-bottom cmyQbua" xid="bottom1" style="vertical-align:middle;text-align:center;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmyQbua"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label x-dialog-button cmyQbua" xid="cancelBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;wReceiver.windowCancel&#34;}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cmyQbua"> 
+        <i xid="i2" __cid="cmyQbua" class="cmyQbua"></i>  
+        <span xid="span2" __cid="cmyQbua" class="cmyQbua">取消</span>
+      </a>
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label x-dialog-button cmyQbua" xid="delBut" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:delButClick" data-config="{&#34;label&#34;:&#34;删除&#34;}" __cid="cmyQbua"> 
+        <i xid="i3" __cid="cmyQbua" class="cmyQbua"></i>  
+        <span xid="span3" __cid="cmyQbua" class="cmyQbua">删除</span>
+      </a>
+    </div>
+    <style __cid="cmyQbua" class="cmyQbua">.x-panel.p80ac664236244c88bb9ad656e6af0e5c-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.p80ac664236244c88bb9ad656e6af0e5c-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.p80ac664236244c88bb9ad656e6af0e5c-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p80ac664236244c88bb9ad656e6af0e5c-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.p80ac664236244c88bb9ad656e6af0e5c-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p80ac664236244c88bb9ad656e6af0e5c-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p80ac664236244c88bb9ad656e6af0e5c-iosstatusbar >.x-panel-content {top: 0px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="wReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:wReceiverReceive" __cid="cmyQbua" class="cmyQbua"></span>
+</div>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 记得手动同步apache-tomcat\conf\Catalina\localhost\baas.xml -->
+<Context reloadable="true">
+	<Resource name="jdbc/printtest" type="javax.sql.DataSource"
+		maxActive="100" maxIdle="30"
+		driverClassName="com.mysql.jdbc.Driver" url="jdbc:mysql://202.117.10.185:3306/printtest"
+		username="root" password="x5" />
+		
+</Context>
